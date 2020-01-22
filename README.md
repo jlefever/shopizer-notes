@@ -50,7 +50,7 @@ cd <shopizer root>/sm-shop
 mvnw spring-boot:run
 ```
 
-Once Shopizer is running, you can visit `localhost:8080` to view the storefront. You can also visit `localhost:8080/admin` with username `admin@shopizer.com` and password `password` to view the admin panel. The HTTP endpoints are available as Swagger docs at `http://localhost:8080/swagger-ui.html`.
+Once Shopizer is running, you can visit `localhost:8080` to view the storefront. You can also visit `localhost:8080/admin` with username `admin@shopizer.com` and password `password` to view the admin panel. The HTTP endpoints are available as Swagger docs at `localhost:8080/swagger-ui.html`.
 
 ## Debug
 
