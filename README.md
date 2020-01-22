@@ -1,6 +1,6 @@
 # Shopizer
 
-These are some brief instructions on how to get Shopizer running on your system. If you prefer a video format, also check [this](https://www.youtube.com/watch?v=SCiRreBUFNA) out. Keep in mind the video differs a little from this document.
+These are some brief instructions on how to get Shopizer running on your system. If you prefer a video format, also check [this](https://www.youtube.com/watch?v=SCiRreBUFNA) out. Keep in mind the video differs a little from this document. 
 
 ## Dependencies
 
@@ -8,7 +8,7 @@ You will need these on your system before running Shopizer.
 
 ### Java 8
 
-Ensure you have Java 8 installed and not a later version. Your `%JAVA_HOME%` and `%PATH%` environment variables should also be properly set.
+Ensure you have Java 8 installed and not a later version. Your `%JAVA_HOME%` and `%PATH%` environment variables should also be properly set. There are many distributions of Java 8; I prefer Amazon's OpenJDK distribution available [here](https://docs.aws.amazon.com/corretto/latest/corretto-8-ug/downloads-list.html) but any should work fine. For more info on setting your environment variables, see [here](https://kodejava.org/how-do-i-setup-java_home-and-path-variables-in-windows/) for Windows or [here](https://stackoverflow.com/a/7502128) for macOS.
 
 ### Elasticsearch
 
@@ -43,14 +43,14 @@ elasticsearch.bat
 
 On macOs or Linux, use `./elasticsearch` instead of the `.bat` file.
 
-2. Start Shopizer
+2. Start Shopizer.
 
 ```
 cd <shopizer root>/sm-shop
 mvnw spring-boot:run
 ```
 
-Once Shopizer is running, you can visit `localhost:8080` to view the storefront. You can also visit `localhost:8080/admin` with username `admin@shopizer.com` and password `password` to view the admin panel.
+Once Shopizer is running, you can visit `localhost:8080` to view the storefront. You can also visit `localhost:8080/admin` with username `admin@shopizer.com` and password `password` to view the admin panel. The HTTP endpoints are available as Swagger docs at `http://localhost:8080/swagger-ui.html`.
 
 ## Debug
 
@@ -69,3 +69,5 @@ To understand the internals of Shopizer, it may be helpful to step through the c
  - You may notice an interesting exception during the startup of Shopizer. To fix this, search for instances of "DETETE" in the source code (there should be three) and change them all to "DELETE".
 
  - If you ever need to clear all persisted data, delete all `.db` files from inside `sm-shop`, and delete the `data` directory from inside your Elasticsearch install.
+ 
+ - To interact with the HTTP endpoints, I like to use [Insomnia](https://insomnia.rest/). Some people also use [Postman](https://www.getpostman.com/) or even just `curl`.
