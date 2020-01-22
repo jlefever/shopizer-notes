@@ -30,7 +30,7 @@ cd <shopizer root>
 mvnw clean install
 ```
 
-On macOs or Linux, use `./mvnw` instead of just `mvnw`.
+On macOS or Linux, use `./mvnw` instead of just `mvnw`.
 
 ## Run
 
@@ -41,7 +41,7 @@ cd <elasticsearch root>/bin
 elasticsearch.bat
 ```
 
-On macOs or Linux, use `./elasticsearch` instead of the `.bat` file.
+On macOS or Linux, use `./elasticsearch` instead of the `.bat` file.
 
 2. Start Shopizer.
 
@@ -56,7 +56,7 @@ Once Shopizer is running, you can visit `localhost:8080` to view the storefront.
 
 To understand the internals of Shopizer, it may be helpful to step through the code using an IDE.
 
-### InteliJ
+### IntelliJ
 
 *TODO*
 
