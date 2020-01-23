@@ -20,6 +20,7 @@ Elasticsearch is a flexible search engine used by Shopizer for search and cachin
 
 ```
 git clone https://github.com/shopizer-ecommerce/shopizer
+cd shopizer
 git checkout origin/2.9.0
 ```
 
