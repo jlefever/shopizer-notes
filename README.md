@@ -34,7 +34,7 @@ On macOS or Linux, use `./mvnw` instead of just `mvnw`.
 
 ## Run
 
-1. Ensure Elasticsearch is running.
+1. Start Elasticsearch.
 
 ```
 cd <elasticsearch root>/bin
@@ -51,6 +51,8 @@ mvnw spring-boot:run
 ```
 
 Once Shopizer is running, you can visit `localhost:8080` to view the storefront. You can also visit `localhost:8080/admin` with username `admin@shopizer.com` and password `password` to view the admin panel. The HTTP endpoints are available as Swagger docs at `localhost:8080/swagger-ui.html`.
+
+To stop either Elasticsearch or Shopizer, simply close their respective terminal window or hit `ctrl+c`.
 
 ## Debug
 
